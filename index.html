@@ -1,143 +1,170 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
 
-    <title>Linh Dinh – Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+  <title>Linh Dinh – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCJKD292YN"></script>
-    <script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCJKD292YN"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-RCJKD292YN');
-    </script>
+  </script>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="main-header">
-        <div class="header-left">
-            <h1 class="name-title">Linh DINH</h1>
-
-            <p class="tagline">
-                Data Analyst Ingénieur
-            </p>
-
-            <p class="subline">
-                Comprendre en profondeur - Analyser avec rigueur - Accompagner le décideur
-            </p>
-        </div>
-
-        <nav class="header-right">
-            <a href="index.html" class="active">Accueil</a>
-            <a href="about.html">À propos</a>
-            <a href="contact.html">Contact</a>
-            <a href="assets/Linh_Dinh_CV.pdf"
-               class="resume-btn"
-               target="_blank"
-               rel="noopener">
-               Résumé
-            </a>
-
-            <!-- Dark mode -->
-            <button id="darkToggle" class="toggle-btn" aria-label="Toggle dark mode">
-            <span class="material-symbols-rounded">light_mode</span>
-            </button>
-        </nav>
-    </header>
-
-    <main class="home-page">
-
-        <!-- PROJECTS SECTION -->
-        <section class="projects-section">
-            <h2 class="projects-title">Projets réalisés</h2>
-
-            <div class="projects-row">
-
-
-
-                <!-- CARD 1 -->
-                <div class="project-card-new">
-                    <img src="images/o_page_daccueil.png" class="project-img-new">
-                    <div class="skills-row">
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">SQL</span>
-                        <span class="skill-badge">Data management</span>
-                        <span class="skill-badge">NLP</span>
-                        <span class="skill-badge">LLMs</span>
-                        <span class="skill-badge">RAG</span>
-
-                    </div>
-                    <p class="project-desc">Analyser 2 400+ avis de l’Ae et construire un outil d’aide à la décision.</p>
-                    <a class="learn-more" href="observance.html">En savoir plus →</a>
-                </div>
-
-                <!-- CARD 2 -->
-                <div class="project-card-new">
-                    <img src="images/zds.png" class="project-img-new">
-                    <div class="skills-row">
-                        <span class="skill-badge">ETL</span>
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">DataViz</span>
-                        <span class="skill-badge">Dashboard</span>
-                    </div>
-                    <p class="project-desc"></p>
-                    <a class="learn-more">En savoir plus →</a>
-                </div>
-
-                <!-- CARD 3 -->
-                <div class="project-card-new">
-                    <img src="images/bluegreen_1.png" class="project-img-new">
-                    <div class="skills-row">
-                        <span class="skill-badge">DataViz</span>
-                        <span class="skill-badge">Analytics</span>
-                    </div>
-                    <p class="project-desc"></p>
-                    <a class="learn-more">En savoir plus →</a>
-                </div>
-
-                <!-- CARD 4 -->
-                <div class="project-card-new">
-                    <img src="images/hackathon.png" class="project-img-new">
-                    <div class="skills-row">
-                        <span class="skill-badge">Product</span>
-                        <span class="skill-badge">GenAI</span>
-                    </div>
-                    <p class="project-desc">Mon CoachAI – Solution créée lors du Hackathon Women in GenAI.</p>
-                    <a class="learn-more">En savoir plus →</a>
-                </div>
-
-            </div>
-        </section>
-    </main>
-    <!-- DARK MODE TOGGLE SCRIPT -->
-    <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const toggleButton = document.getElementById("darkToggle");
-        const icon = toggleButton.querySelector("span");
-
-        toggleButton.addEventListener("click", () => {
-            document.body.classList.toggle("dark-mode");
-
-            icon.textContent = document.body.classList.contains("dark-mode")
-                ? "dark_mode"   
-                : "light_mode"; 
-        });
-    });
-    </script>
-
-    <p style="text-align:center; font-size:12px; opacity:0.6;">
-    © Linh Dinh, 2025
+<!-- ================= HEADER ================= -->
+<header class="main-header">
+  <div class="header-left">
+    <h1 class="name-title">Linh DINH</h1>
+    <p class="tagline">Data Analyst Ingénieur</p>
+    <p class="subline">
+      Comprendre en profondeur · Analyser avec rigueur · Accompagner le décideur
     </p>
+  </div>
 
-    </body>
+  <nav class="header-right">
+    <a href="index.html" class="active">Accueil</a>
+    <a href="about.html">À propos</a>
+    <a href="contact.html">Contact</a>
+    <a href="assets/Linh_Dinh_CV.pdf" class="resume-btn" target="_blank" rel="noopener">
+      Résumé
+    </a>
+
+    <button id="darkToggle" class="toggle-btn" aria-label="Toggle dark mode">
+      <span class="material-symbols-rounded">light_mode</span>
+    </button>
+  </nav>
+</header>
+
+<!-- ================= MAIN ================= -->
+<main class="home-page">
+
+<section class="projects-section">
+  <h2 class="projects-title">Projets réalisés</h2>
+
+  <div class="carousel-wrapper">
+    <button class="carousel-btn left" id="prevBtn">‹</button>
+
+    <div class="carousel-track" id="carouselTrack">
+
+      <!-- PROJECT 1 -->
+      <a href="https://github.com/linh-dinh-1012/observance_app" target="_blank" class="project-link">
+        <div class="project-card-new">
+          <img src="images/o_page_daccueil.png" class="project-img-new" alt="Observance">
+          <div class="skills-row">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">SQL</span>
+            <span class="skill-badge">Text Mining</span>
+            <span class="skill-badge">Data Pipeline</span>
+            <span class="skill-badge">RAG</span>
+          </div>
+          <p class="project-desc">
+            Révéler, par l’analyse automatisée de milliers de rapports, 
+            comment les enjeux environnementaux sont pris en compte dans la décision publique.
+          </p>
+          <span class="learn-more">En savoir plus →</span>
+        </div>
+      </a>
+
+      <!-- PROJECT 2 -->
+      <a href="assets/EmpowerHer-IA-Accompagner-lAdoption-de-lIA.pdf" target="_blank" class="project-link">
+        <div class="project-card-new">
+          <img src="images/hackathon.png" class="project-img-new" alt="Mon Coach IA">
+          <div class="skills-row">
+            <span class="skill-badge">GenAI</span>
+            <span class="skill-badge">Product Design</span>
+            <span class="skill-badge">Pitching</span>
+            <span class="skill-badge">Storytelling</span>
+          </div>
+          <p class="project-desc">
+              Projet finaliste d’un Hackathon organisé par EY & Microsoft :
+              Mon Coach IA, un assistant d’IA conçu pour faciliter l’adoption 
+              de l’IA par les collaborateurs de l’URSSAF.
+          </p>
+          <span class="learn-more">En savoir plus →</span>
+        </div>
+      </a>
+
+      <!-- PROJECT 3 -->
+      <a href="https://github.com/linh-dinh-1012/bluegreen-governance-ai-analysis" target="_blank" class="project-link">
+        <div class="project-card-new">
+          <img src="images/bluegreen_governance.png" class="project-img-new" alt="BlueGreen Governance">
+          <div class="skills-row">
+            <span class="skill-badge">AI Consulting</span>
+            <span class="skill-badge">Document Analysis</span>
+            <span class="skill-badge">LLMs</span>
+            <span class="skill-badge">International Teamwork</span>
+          </div>
+          <p class="project-desc">
+            70 % de temps gagné sur la revue de littérature (400+ documents), grâce à l’IA, 
+            au service d’un projet Horizon Europe en gouvernance environnementale.
+          </p>
+          <span class="learn-more">En savoir plus →</span>
+        </div>
+      </a>
+
+      <!-- PROJECT 4 -->
+      <a href="https://github.com/linh-dinh-1012/12_zero_dechet_sauvage" target="_blank" class="project-link">
+        <div class="project-card-new">
+          <img src="images/zds.png" class="project-img-new" alt="Zéro déchet sauvage">
+          <div class="skills-row">
+            <span class="skill-badge">ETL</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">DataViz</span>
+            <span class="skill-badge">Dashboard</span>
+          </div>
+          <p class="project-desc">
+            Faire parler les données pour aider les collectivités à prioriser l’action contre les déchets sauvages.
+          </p>
+          <span class="learn-more">En savoir plus →</span>
+        </div>
+      </a>
+    </div>
+    <button class="carousel-btn right" id="nextBtn">›</button>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= SCRIPTS ================= -->
+
+<!-- Carousel -->
+<script>
+  const track = document.getElementById("carouselTrack");
+  const nextBtn = document.getElementById("nextBtn");
+  const prevBtn = document.getElementById("prevBtn");
+
+  const scrollAmount = 320;
+
+  nextBtn.addEventListener("click", () => {
+    track.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  });
+
+  prevBtn.addEventListener("click", () => {
+    track.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+  });
+</script>
+
+<!-- Dark mode -->
+<script>
+  document.getElementById("darkToggle").addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+</script>
+
+<footer style="text-align:center; font-size:12px; opacity:0.6; margin:24px 0;">
+  © Linh Dinh, 2026
+</footer>
+
+</body>
 </html>
