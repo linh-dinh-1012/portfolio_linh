@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+  <title>Linh Dinh – Contact</title>
+  <link rel="stylesheet" href="style.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCJKD292YN"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RCJKD292YN');
+    </script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="header-left" aria-hidden="true"></div>
+        <nav class="header-right">
+            <a href="index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="assets/Linh_Dinh_CV.pdf"
+               class="resume-btn"
+               target="_blank"
+               rel="noopener">
+               Résumé
+            </a>
+
+            <!-- Dark mode -->
+            <button id="darkToggle" class="toggle-btn" aria-label="Toggle dark mode">
+            <span class="material-symbols-rounded">light_mode</span>
+            </button>
+        </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="contact-page">
+
+    <h1 class="contact-title">Contactez-moi</h1>
+    <p class="contact-subtitle">
+      Une question, une opportunité ou simplement envie d’échanger ?  
+      Écrivez-moi via le formulaire ci-dessous.
+    </p>
+
+    <section class="contact-card">
+
+      <form class="contact-form">
+        <label for="email">Adresse e-mail</label>
+        <input type="email" id="email" placeholder="votre@email.com" required />
+
+        <label for="message">Votre message</label>
+        <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
+
+        <button type="submit" class="contact-btn">Envoyer</button>
+      </form>
+
+      <p class="contact-alt">
+        Ou directement par e-mail :  
+        <a href="mailto:contact@linhdinh.fr">contact@linhdinh.fr</a>
+      </p>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <p style="text-align:center; font-size:12px; opacity:0.6;">
+    © Linh Dinh, 2025
+  </p>
+
+  <!-- DARK MODE SCRIPT -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleButton = document.getElementById("darkToggle");
+      const icon = toggleButton.querySelector("span");
+
+      toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        icon.textContent = document.body.classList.contains("dark-mode")
+          ? "dark_mode"
+          : "light_mode";
+      });
+    });
+  </script>
+
+</body>
+</html>

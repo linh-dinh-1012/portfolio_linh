@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Linh Dinh – À propos</title>
+  <link rel="stylesheet" href="style.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCJKD292YN"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RCJKD292YN');
+    </script>
+</head>
+
+<body>
+
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="header-left" aria-hidden="true"></div>
+        <nav class="header-right">
+            <a href="index.html">Accueil</a>
+            <a href="about.html" class="active">À propos</a>
+            <a href="contact.html">Contact</a>
+            <a href="assets/Linh_Dinh_CV.pdf"
+               class="resume-btn"
+               target="_blank"
+               rel="noopener">
+               Résumé
+            </a>
+
+            <!-- Dark mode -->
+            <button id="darkToggle" class="toggle-btn" aria-label="Toggle dark mode">
+            <span class="material-symbols-rounded">light_mode</span>
+            </button>
+        </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="about-page">
+
+    <h1 class="about-title">À propos de moi</h1>
+
+    <section class="about-content">
+
+      <!-- PHOTO -->
+      <div class="about-photo">
+        <img src="images/Photo_profil_background.png" alt="Photo de Linh Dinh">
+      </div>
+
+      <!-- TEXT -->
+      <div class="about-text">
+        <p>
+          Bonjour ! Je suis <strong>Linh Dinh</strong>.
+        </p>
+
+        <p>
+          J’accompagne les organisations dans l’exploitation de leurs données afin de soutenir la prise de décision.
+          Je développe des analyses automatisées et renforcées par l’IA, adaptées aux besoins opérationnels des équipes.
+        </p>
+
+        <p>
+          Avec un background scientifique, j’aborde les sujets avec méthode et rigueur.
+          Je livre des indicateurs, visualisations et analyses claires, directement exploitables par les équipes.
+        </p>
+
+        <p>
+          En dehors du travail, j’ai une grande passion pour la course à pied (semi-marathonienne 2025).<br>
+          Objectif 2026 : boucler mon premier marathon 🏃‍♀️!
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <p style="text-align:center; font-size:12px; opacity:0.6;">
+    © Linh Dinh, 2025
+  </p>
+
+  <!-- DARK MODE SCRIPT -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleButton = document.getElementById("darkToggle");
+      const icon = toggleButton.querySelector("span");
+
+      toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        icon.textContent = document.body.classList.contains("dark-mode")
+          ? "dark_mode"
+          : "light_mode";
+      });
+    });
+  </script>
+
+</body>
+</html>
