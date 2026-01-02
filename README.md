@@ -27,7 +27,8 @@ This portfolio website showcases my projects, work, and interests around data.
 
 **Feel free to reach out:**  
 - Email: contact@linhdinh.fr  
-- LinkedIn: [https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/linhdinh-data/)
+- LinkedIn: https://www.linkedin.com/in/linhdinh-data/ 
+
 
 
 
