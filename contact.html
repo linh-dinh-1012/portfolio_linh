@@ -26,22 +26,23 @@
   <!-- HEADER -->
   <header class="main-header">
     <div class="header-left" aria-hidden="true"></div>
-        <nav class="header-right">
-            <a href="index.html">Accueil</a>
-            <a href="about.html">À propos</a>
-            <a href="contact.html" class="active">Contact</a>
-            <a href="assets/Linh_Dinh_CV.pdf"
-               class="resume-btn"
-               target="_blank"
-               rel="noopener">
-               Résumé (CV)
-            </a>
 
-            <!-- Dark mode -->
-            <button id="darkToggle" class="toggle-btn" aria-label="Toggle dark mode">
-            <span class="material-symbols-rounded">light_mode</span>
-            </button>
-        </nav>
+    <nav class="header-right">
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="assets/Linh_Dinh_CV.pdf"
+         class="resume-btn"
+         target="_blank"
+         rel="noopener">
+         Résumé (CV)
+      </a>
+
+      <!-- Dark mode -->
+      <button id="darkToggle" class="toggle-btn" aria-label="Toggle dark mode">
+        <span class="material-symbols-rounded">light_mode</span>
+      </button>
+    </nav>
   </header>
 
   <!-- MAIN -->
@@ -55,12 +56,45 @@
 
     <section class="contact-card">
 
-      <form class="contact-form">
+      <!-- FORM -->
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mvzgazdg"
+        method="POST"
+      >
+        
+        <!-- Subject -->
+        <input type="hidden" name="_redirect" value="https://linhdinh.fr/merci.html">
+        <input
+          type="hidden"
+          name="_subject"
+          value="Nouveau message depuis linhdinh.fr"
+        />
+
+        <!-- Honeypot anti-spam -->
+        <input
+          type="text"
+          name="_gotcha"
+          style="display:none"
+        />
+
         <label for="email">Adresse e-mail</label>
-        <input type="email" id="email" placeholder="votre@email.com" required />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="votre@email.com"
+          required
+        />
 
         <label for="message">Votre message</label>
-        <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Votre message..."
+          required
+        ></textarea>
 
         <button type="submit" class="contact-btn">Envoyer</button>
       </form>
