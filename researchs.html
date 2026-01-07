@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+  <title>Linh Dinh – Publications</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="header-left" aria-hidden="true"></div>
+    <nav class="header-right">
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="researchs.html" class="active">Recherche scientifique</a>
+      <a href="contact.html">Contact</a>
+      <a href="assets/Linh_Dinh_CV.pdf" class="resume-btn" target="_blank" rel="noopener">
+        Résumé (CV)
+      </a>
+
+      <button id="darkToggle" class="toggle-btn" aria-label="Toggle dark mode">
+        <span class="material-symbols-rounded">light_mode</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="publications-page">
+
+    <h1 class="publications-title">Recherche scientifique</h1>
+
+    <p class="publications-intro">
+      Comme Dino dans <strong>Une vie de chat</strong> 🐈‍⬛, je mène une double vie professionnelle : <br>
+      data analyste par les outils, chercheuse par la posture. </p>
+
+
+    <!-- PUBLICATION 1 -->
+    <article class="publication-card">
+      <h2 class="publication-title">
+        [Communication]  L’intelligence artificielle au service de l’éducation : opportunités, défis et perspectives
+      </h2>
+
+      <p class="publication-meta">
+        Linh Dinh — <em>Mars 2025</em><br>
+        Façonner l'éducation de demain : innovations, défis et perspectives · Colloque Éducatif Présent ! · Université de Montréal (Canada).
+      </p>
+      <div class="publication-links">
+        <a href="https://www.canva.com/design/DAGiuLnyhGg/-G0kPHhAm9NuyLJOneDsHw/view?utm_content=DAGiuLnyhGg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h86f0524b45#1" target="_blank">📄 Présentation</a>
+        <a href="https://cep.sciencesconf.org/#:~:text=Colloque%20Educatif%20Pr%C3%A9sent%20!,d%C3%A9fis%20et%20perspectives%20%2D%20Sciencesconf.org&text=La%2016%C3%A8me%20%C3%A9dition%20du,de%20l'Universit%C3%A9%20de%20Montr%C3%A9al." target="_blank">📄 Information du colloque</a>
+      </div>
+    </article>
+
+    <!-- PUBLICATION 2 -->
+    <article class="publication-card">
+      <h2 class="publication-title">
+        [Scientific review report] BlueGreen governance: Institutional barriers and enablers .
+      </h2>
+
+      <p class="publication-meta">
+        Fobé, E., Blatrix, C., Douguet, J.-M., Salès, K., & Dinh, L., et al. (2025)
+      </p>
+      <div class="publication-links">
+        <a href="https://bggovernance.eu/wp-content/uploads/2025/04/BGG_ScientificReviewReport_Fobe_etal_2025.pdf" target="_blank">📄 Raport</a>
+        <a href="https://cordis.europa.eu/project/id/101086091" target="_blank">🗂️ Présentation du projet</a>
+        <a href="https://bggovernance.eu/" target="_blank">🌐 Site web du projet</a>
+      </div>
+    </article>
+
+    <!-- PUBLICATION 3 -->
+    <article class="publication-card">
+      <h2 class="publication-title">
+        [Communication] L’éco-anxiété, entre des actions individuelles et des actions collectives
+      </h2>
+
+      <p class="publication-meta">
+        Linh Dinh, Cécile Blatrix — <em>Juillet 2023</em><br>
+        10e Congrès de l'Association Française de Sociologie - AFS (Lyon).
+      </p>
+      <div class="publication-links">
+        <a href="https://www.canva.com/design/DAG9vFdaR-I/G0XSvCO2J6hkBVQoY4vDVQ/view?utm_content=DAG9vFdaR-I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc18e712942#1"> 📄 Présentation</a>
+        <a href="https://afs-socio.fr/wp-content/uploads/2023/07/prog_RT_AFS_2023.pdf">📄 Programme des sessions des RT</a>
+      
+      </div>
+    </article>
+
+        <!-- PUBLICATION 4 -->
+    <article class="publication-card">
+      <h2 class="publication-title">
+        [Rapport scientifique] PEGASE - Gouvernance de l’évaluation environnementale Air, Paysages, Ecosystèmes
+      </h2> 
+      <p class="publication-meta">
+        Blatrix, C., Frascaria-Lacoste, N., et al. (2023) — Linh Dinh (membre de l'équipe)<br>
+      </p>
+      <div class="publication-links">
+        <a href="https://ittecop.fr/fr/ressources/telechargements/rapport-final/documents-projets/1186-pegase-plaquette-fr/file" target="_blank">🗂️ Présentation du projet</a>
+        <a href="https://ittecop.fr/fr/ressources/telechargements/rapport-final/rapport-ittecop-apr-2017/1391-apr-2017-pegase-rf/file" target="_blank">📄 Raport</a>
+      </div>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <p style="text-align:center; font-size:12px; opacity:0.6;">
+    © Linh Dinh, 2026
+  </p>
+
+  <!-- DARK MODE -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleButton = document.getElementById("darkToggle");
+      const icon = toggleButton.querySelector("span");
+
+      toggleButton.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        icon.textContent = document.body.classList.contains("dark-mode")
+          ? "dark_mode"
+          : "light_mode";
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -147,7 +147,7 @@ a {
   border: 1px solid var(--grey);
   box-shadow: var(--soft-shadow);
   padding: 14px;
-  height: 350px;
+  height: 370px;
 
   display: flex;
   flex-direction: column;
@@ -298,6 +298,114 @@ a {
 .dark-mode .about-socials svg {
   fill: #ffffff;
 }
+
+/* =========================
+   PUBLICATIONS PAGE
+========================= */
+
+.publications-page {
+  padding: 30px 24px 60px;
+  background: linear-gradient(
+    180deg,
+    rgba(31, 78, 121, 0.08) 0%,
+    rgba(31, 78, 121, 0.03) 50%,
+    rgba(31, 78, 121, 0.00) 100%
+  );
+}
+
+.publications-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--deep-blue);
+  margin-bottom: 12px;
+}
+
+.publications-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--dark-grey);
+  line-height: 1.6;
+}
+
+/* Card */
+.publication-card {
+  max-width: 900px;
+  margin: 0 auto 28px;
+  padding: 28px 32px;
+
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(31, 78, 121, 0.18);
+  border-radius: 24px;
+}
+
+.publication-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--deep-blue);
+  margin: 0 0 10px;
+}
+
+.publication-meta {
+  font-size: 12px;
+  color: #5a6b7c;
+  margin-bottom: 14px;
+}
+
+.publication-abstract {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--dark-grey);
+  margin-bottom: 16px;
+}
+
+/* Tags */
+.publication-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.pub-tag {
+  padding: 4px 12px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: rgba(31, 78, 121, 0.10);
+  color: var(--deep-blue);
+  font-weight: 600;
+}
+
+/* Links */
+.publication-links {
+  display: flex;
+  gap: 16px;
+}
+
+.publication-links a {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--deep-blue);
+  text-decoration: none;
+}
+
+.publication-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .publication-card {
+    padding: 22px;
+  }
+
+  .publications-title {
+    font-size: 32px;
+  }
+}
+
 
 /* =========================
    CONTACT PAGE
