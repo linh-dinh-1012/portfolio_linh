@@ -275,8 +275,8 @@ a {
 }
 
 .about-socials a {
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -285,8 +285,8 @@ a {
 }
 
 .about-socials svg {
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   fill: var(--dark-grey);
 }
 
